@@ -1,4 +1,3 @@
 def count_elements(array)
-  # code goes here
+  array.reduce(Hash.new(0)){|a,b| a[b]+=1; a}
 end
- 
